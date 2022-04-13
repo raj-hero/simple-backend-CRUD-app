@@ -16,7 +16,6 @@ connectDB();
 
 app.use(bodyparser.urlencoded({extended:true}));
 
-// set view engine
 app.set("view engine","ejs");
 // __dirname=>directory wherer the file we r working on resides(current)
 // vvv commented as no need to create dedicated folder for ejs

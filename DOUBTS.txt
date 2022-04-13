@@ -22,3 +22,10 @@ render.js=>
  * @description Root Route
  * @method GET /
  */  ?????
+
+ controller.js=>
+check few changes find ,create
+put not working
+
+-----------------------
+jquery and ejs not added in resume as jquery-> part of js & ejs->templating
