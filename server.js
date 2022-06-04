@@ -11,7 +11,6 @@ dotenv.config({path:'config.env'});
 const port=process.env.PORT||8080
 
 app.use(morgan('tiny'));
-
 connectDB();
 
 app.use(bodyparser.urlencoded({extended:true}));
