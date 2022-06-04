@@ -8,7 +8,7 @@ const connectDB=require('./server/database/connection');
 
 const app=express();
 dotenv.config({path:'config.env'});
-const PORT=process.env.PORT||8080
+const port=process.env.PORT||8080
 
 app.use(morgan('tiny'));
 
@@ -43,6 +43,6 @@ app.use('/js',express.static(path.resolve(__dirname,"assets/js")));
 
 app.use('/',require('./server/routes/router'));
 
-app.listen(PORT,()=>{
-    console.log(`The server is up and running on http://localhost:${PORT}`);
+app.listen(port,()=>{
+    console.log(`The server is up and running on http://localhost:${port}`);
 });
