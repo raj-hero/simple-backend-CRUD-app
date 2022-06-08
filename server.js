@@ -8,7 +8,7 @@ const connectDB=require('./server/database/connection');
 
 const app=express();
 dotenv.config({path:'config.env'});
-const port=process.env.PORT||8080
+const port=process.env.PORT||8080;
 
 app.use(morgan('tiny'));
 connectDB();
